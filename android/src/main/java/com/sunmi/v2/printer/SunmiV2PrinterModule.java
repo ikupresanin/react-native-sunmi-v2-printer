@@ -111,6 +111,11 @@ public class SunmiV2PrinterModule extends ReactContextBaseJavaModule {
         return "SunmiV2Printer";
     }
 
+    @Override    
+    public boolean canOverrideExistingModule() {        
+        return true;    
+    } 
+
 
     @Override
     public Map<String, Object> getConstants() {
